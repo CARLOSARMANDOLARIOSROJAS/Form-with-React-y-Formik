@@ -14,7 +14,7 @@ const Formulario = () => {
                 // Lo que sigue es un objeto:
                 initialValues={{
                     nombre: '',
-                    correo: '    '
+                    correo: ''
                 }}
                 validate={(values) => {
                     let errores = {};
