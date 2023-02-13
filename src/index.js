@@ -1,17 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import Formulario from './Formularios';
+import './index.css'
+import './Formulario.css'
+// let name = 'Carlos';
+// const JSX = (
+//   <div className='container'>
+//     <h1 className='title'>Hola {name}</h1>
+//     <h2 className='title'>Que tengas un buen día mañana.</h2>
+//   </div> 
+//   // A eso se le conoce como fragmento de código. 
+// )
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+      <div className="contenedor">
+        <Formulario/>
+      </div>
+  </React.StrictMode>,
+  document.getElementById('root')
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
